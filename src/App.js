@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Machine from "./Components/Machine";
+import "./App.css";
+import Friend from "./Components/Friend";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Machine s1="X" s2="Y" s3="X" />
+      <Machine s1="X" s2="X" s3="X" />
+      <Machine s1="Y" s2="Y" s3="Y" />
+      <Machine s1="X" s2="X" s3="Y" /> */}
+      <Friend name="Elton" hobbies={["Piano", "Singing", "Dancing"]} />
     </div>
   );
 }
