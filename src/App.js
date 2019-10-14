@@ -11,6 +11,7 @@ function App() {
       <Machine s1="Y" s2="Y" s3="Y" />
       <Machine s1="X" s2="X" s3="Y" /> */}
       <Friend name="Elton" hobbies={["Piano", "Singing", "Dancing"]} />
+      <Friend name="Spencer" hobbies={["Coding", "Guitar", "Drawing"]} />
     </div>
   );
 }
