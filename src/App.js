@@ -3,8 +3,17 @@ import Machine from "./Components/Machine";
 import "./App.css";
 import Friend from "./Components/Friend";
 import Hello from "./Components/Default_Props/Hello";
+import foods from "./Components/ModuleExport/foods";
+import { choice, remove } from "./Components/ModuleExport/Helpers";
 
 function App() {
+  let fruit = choice(foods);
+  console.log(fruit, "is the chosen One");
+  console.log(`I'd like one ${fruit}, please.`);
+  let remaing = remove(foods, fruit);
+  //remaing will always be 1 less then the length of the original array because we are splicing one in the remove func
+  console.log(remaing);
+  console.log(`${remaing.length} is what is left`);
   return (
     <div className="App">
       {/* <Machine s1="X" s2="Y" s3="X" />
