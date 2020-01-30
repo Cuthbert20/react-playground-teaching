@@ -11,5 +11,15 @@ function remove(items, item) {
     }
   }
 }
+//creating function that will remove values from an array thats value is less then 10.
+// function add(items, item) {
+//   items.forEach((elm, index) => {
+//     if (elm < 10) {
+//       //using splice to remove elm at index
+//       let underTen = items.splice(index, 1);
+//     }
+//   });
+//   return items
+// }
 
 export { choice, remove };
